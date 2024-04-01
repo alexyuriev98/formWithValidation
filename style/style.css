@@ -40,6 +40,8 @@ label {
     margin-bottom: 16px;
 }
 
+ 
+
 input {
     height: 40px;
     width: 100%;
@@ -49,11 +51,13 @@ input {
     border: 1px solid #ccc;
 }
 
-input:focus {
+input:focus,
+label.filled input {
     border-color: var(--focus_color);
 }
 
-input:focus + span {
+input:focus + span,
+label.filled span {
     top: -7px;
     left: 8px;
     font-size: 10px;
